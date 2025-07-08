@@ -1,0 +1,101 @@
+
+/* estilos generales */
+
+body {
+    background-color: #D5E1EF;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.father {
+    background-color: #ffffff;
+    border-radius: 20px ;
+    width: 320px;
+    /* height: 80vh; */
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.son {
+    background-color: #3685FF;
+    border-radius: 10px;
+    padding-top: 50px;
+    width: 270px;
+    height: 270px;
+ }
+.img{
+    margin: auto;
+     width: 70%;
+     height: 100%;
+       
+
+}
+.img img{
+    border-radius: 10px;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.bro{
+ text-align: center;
+}
+
+.bro h1 {
+    font-size: 20px;
+    color: #1F314F;
+    font-weight: bold;
+}
+.bro p{
+    font-size: 16px;
+    color: #68778D;
+}
+
+
+.oculto{
+    visibility: hidden;
+    display: none;
+}
+
+/* diseño responsivo con media query */
+
+@media (max-height: 580px) {
+    .father{
+        display: none;
+    }
+    .oculto {
+        visibility: inherit;
+        display: flex;
+        width: 100%;
+    }
+
+    
+}
+@media (max-height:699px) {
+    .father{
+        height: 60vh;
+    }
+    .bro{
+        opacity: 0;
+    }
+    
+}
+
+@media (min-height:700px) {
+    .father{
+        height: 70vh;
+    }
+
+
+}
+
+
+@media (min-height: 780px) {
+
+    .father{
+        height: 500px;
+    }
+    
+}
